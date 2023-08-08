@@ -10,6 +10,9 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="icon" type="image/x-icon" href="/icons/ctc.png" />
     <script
       src="https://kit.fontawesome.com/94eeba7e1c.js"
       crossorigin="anonymous"
@@ -18,74 +21,95 @@
     <title>Collin Chuang</title>
   </head>
   <body>
-    <div id="particles-js"></div>
-      <div id="homeBackground">
-        <div id="homeContainer" class="container">
-          <div class="row">
-            <div class="col">
-              <h1 id="myName" class="display-1 text-center">COLLIN CHUANG</h1>
-              <div class="row">
-                <div class="col-12 text-center">
-                  <a
-                    href="https://www.linkedin.com/in/collin-chuang-828076227/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    id="btnItem"
-                    class="btn btn-outline-light border-0"
-                    role="button"
-                  >
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
-                  </a>
-                  <a
-                    href="https://github.com/Ctc8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    id="btnItem"
-                    class="btn btn-outline-light border-0"
-                    role="button"
-                  >
-                    <i class="fa-brands fa-github"></i> GitHub
-                  </a>
-                  <a
-                    href="https://www.instagram.com/collinctc/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    id="btnItem"
-                    class="btn btn-outline-light border-0"
-                    role="button"
-                  >
-                    <i class="fa-brands fa-instagram"></i> Instagram
-                  </a>
-                </div>
+    <div id="main-body"></div>
+    <div id="homeBackground">
+      <div id="homeContainer" class="container">
+        <div class="row">
+          <div class="col">
+            <h1 id="myName" class="display-1 text-center">COLLIN CHUANG</h1>
+            <div class="row">
+              <div class="col-12 text-center">
+                <a
+                  href="https://www.linkedin.com/in/collin-chuang-828076227/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="btnItem"
+                  class="btn btn-outline-light border-0"
+                  role="button"
+                >
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a
+                  href="https://github.com/Ctc8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="btnItem"
+                  class="btn btn-outline-light border-0"
+                  role="button"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://www.instagram.com/collinctc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="btnItem"
+                  class="btn btn-outline-light border-0"
+                  role="button"
+                >
+                  <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
               </div>
             </div>
           </div>
         </div>
+        <button id="dark-mode-btn"> <i class="fa-solid fa-lightbulb fa-beat fa-xl"></i></button>
       </div>
+    </div>
 
     <div id="educationBackground">
       <div id="educationContainer" class="container">
-          <div class="row">
-            <h1 id="educationHeader" class="display-1 text-center py-5">Education</h1>
-            <div class="col-md-8 mx-auto">
-                <div id="educationCard" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">University of California, Merced</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Computer Science and Engineering, B.S.</h6>
-                    <h6 id="educationDates" class="card-subtitle mb-2 text-muted">Aug 2021 - May 2025<h6>
-                    <p class="card-text py-1 text-muted">Undergraduate program in Computer Science and Engineering.</p>
-                  </div>
-                </div>
+        <div class="row">
+          <h1 id="educationHeader" class="display-1 text-center py-5">
+            Education
+          </h1>
+          <div class="col-md-8 mx-auto">
 
-                <div id="educationCard" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">John F. Kennedy High School</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">High School Degree</h6>
-                    <h6 id="educationDates" class="card-subtitle mb-2 text-muted">Aug 2017 - May 2021<h6>
-                    <p class="card-text py-1 text-muted">Fun fact: I played two years of high school basketball! </p>
-                  </div>
-                </div>
+            <div class="educationCard card">
+              <img
+                src="icons/ucmerced.png"
+                id="education-logo"
+                alt="ucmerced"
+              />
+              <div class="card-body">
+                <h5 class="card-title">University of California, Merced</h5>
+                <h6 class="card-subtitle">
+                  Computer Science and Engineering, B.S.
+                </h6>
+                <h6 class="card-subtitle">
+                  Aug 2021 - May 2025
+                </h6>
+              </div>
             </div>
+
+            <div class="educationCard card">
+              <img
+                src="icons/khs.png"
+                id="education-logo"
+                alt="khs.png"
+              />
+              <div class="card-body">
+                <h5 class="card-title">John F. Kennedy High School</h5>
+                <h6 class="card-subtitle">
+                  High School Degree
+                </h6>
+                <h6 class="card-subtitle">
+                  Aug 2017 - May 2021
+                </h6>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -96,21 +120,130 @@
           <h1 id="aboutHeader" class="display-1 py-5 text-center">About Me</h1>
           <div class="row">
             <div class="col">
-              <div id="aboutMeCard" class="card">
-                <h2 class="px-4 py-3 card-title">Collin Chuang</h2>
-                <h4 class="px-4 py-1">Updated: May 21, 2023</h4>
-                <p id="paragraph" class="px-4 py-2">
-                  As the only computer scientist in my family, I mostly observe my peers and students my age as guidance for anything technology related. While there are benefits to having family members that are in computer science, having the freedom to explore the vast career paths in computer science on your own can be rewarding, in my opinion. When I wrote my first "Hello World" program in the fall of 2021, it was exciting to have taken my first steps, but also frightening. The first thought that crossed my mind was, "How can this 'Hello World' program ever be of use in the real world?" 
+              <div class="text-center">
+                <img src="icons/self.png" alt="self.png" id="self-image" />
+              </div>
+              <div id="about-card" class="card">
+                <h2 id="about-title">Collin Chuang</h2>
+                <h4 id="about-pg">Updated: August 1, 2023</h4>
+                <p id="about-pg">
+                  When I wrote my first "Hello World" program in the fall of
+                  2021, it was exciting to have started my career, but also
+                  frightening. The first thought that crossed my mind was, "How
+                  can this 'Hello World' program ever be of use in the real
+                  world?"
                 </p>
-                <p id="paragraph" class="px-4 py-2">
-                  So far in my studies in college, I have a solid foundation in programming languages like Python and C++. However, I learned that I can't make any web applications using just Python or C++, so I went ahead and learned the basics of web development. I was able to pick up HTML pretty quickly, but I found that formatting in CSS took too much time. I made the decision to use Bootstrap to be more efficient in styling and make my site look a little bit neater. I then learned that JavaScript can make your web pages more interactive, utilizing the DOM. I also have exposure to lower level concepts such as dynamic memory allocation, pointers, and even programming in MIPS assembly language. 
+                <p id="about-pg">
+                  So far in my studies in college, I have a solid foundation in
+                  programming languages like Python and C++. However, I learned
+                  that I can't make any web applications using just Python or
+                  C++, so I began learning the basics of web development. I also
+                  have exposure to lower level concepts such as dynamic memory
+                  allocation, pointers, and even programming in MIPS assembly
+                  language.
                 </p>
-                <p id="paragraph" class="px-4 py-2">
-                  I strive to be a well-rounded individual, believing in the importance of collaboration, communication, and persistence. I'm a quick learner and I'm constantly searching for opportunities to expand my knowledge outside of the classroom. Feel free to reach out/connect with me through any of my media links!
+                <p id="about-pg">
+                  I strive to be a well-rounded individual, believing in the
+                  importance of collaboration, communication, and persistence.
+                  I'm a quick learner and I'm constantly searching for
+                  opportunities to expand my knowledge outside of the classroom.
+                  Feel free to connect with me!
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skillsBackground">
+      <div id="skillsContainer" class="container">
+        <div class="row">
+          <h1 id="skillsHeader" class="display-1 py-5 text-center">Skills</h1>
+
+          <h3 class="skillsSubHeader text-center">Programming Languages</h3>
+          <ul id="techList" class="text-center">
+            <li class="icons">
+              <img src="icons/c.png" class="icons-img" alt="c.png" />
+              <p class="icons-text">C</p>
+            </li>
+            <li class="icons">
+              <img src="icons/cpp.png" class="icons-img" alt="cpp.png" />
+              <p class="icons-text">C++</p>
+            </li>
+            <li class="icons">
+              <img src="icons/python.png" class="icons-img" alt="python.png" />
+              <p class="icons-text">Python</p>
+            </li>
+            <li class="icons">
+              <img src="icons/js.png" class="icons-img" alt="js.png" />
+              <p class="icons-text">JavaScript</p>
+            </li>
+          </ul>
+
+          <h3 class="skillsSubHeader text-center">Technologies</h3>
+          <ul id="techList" class="text-center">
+            <li class="icons">
+              <img src="icons/html.png" class="icons-img" alt="html.png" />
+              <p class="icons-text">HTML5</p>
+            </li>
+            <li class="icons">
+              <img src="icons/css.png" class="icons-img" alt="css.png" />
+              <p class="icons-text">CSS3</p>
+            </li>
+            <li class="icons">
+              <img
+                src="icons/bootstrap.png"
+                class="icons-img"
+                alt="bootstrap.png"
+              />
+              <p class="icons-text">Bootstrap</p>
+            </li>
+            <li class="icons">
+              <img src="icons/react.png" class="icons-img" alt="react.png" />
+              <p class="icons-text">React.js</p>
+            </li>
+            <li class="icons">
+              <img src="icons/tailwind.png" class="icons-img" alt="tailwind.png" />
+              <p class="icons-text">TailwindCSS</p>
+            </li>
+          </ul>
+
+          <h3 class="skillsSubHeader text-center">Tools</h3>
+          <ul id="techList" class="text-center">
+            <li class="icons">
+              <img src="icons/github.png" class="icons-img" alt="github.png" />
+              <p class="icons-text">GitHub</p>
+            </li>
+            <li class="icons">
+              <img src="icons/git.png" class="icons-img" alt="git.png" />
+              <p class="icons-text">Git</p>
+            </li>
+            <li class="icons">
+              <img src="icons/figma.png" class="icons-img" alt="figma.png" />
+              <p class="icons-text">Figma</p>
+            </li>
+            <li class="icons">
+              <img
+                src="icons/photoshop.png"
+                class="icons-img"
+                alt="photoshop.png"
+              />
+              <p class="icons-text">Photoshop</p>
+            </li>
+            <li class="icons">
+              <img src="icons/vite.png" class="icons-img" alt="vite.png" />
+              <p class="icons-text">Vite</p>
+            </li>
+            <li class="icons">
+              <img src="icons/npm.png" class="icons-img" alt="npm.png" />
+              <p class="icons-text">npm</p>
+            </li>
+          </ul>
+
+          <h4 id="skillsComment" class="text-center">
+            <p>...and constantly learning more.</p>
+          </h4>
         </div>
       </div>
     </div>
@@ -122,150 +255,75 @@
             Portfolio
           </h1>
 
-          <div class="row">
-            <div class="py-5 px-5 col-md">
-              <div id="projectCard" class="card">
-                <h3 id="projectTitle" class="text-center fw-light py-3">
-                  Round Robin Scheduling
-                </h3>
-                <h6 class="card-subtitle py-2 text-muted text-center">
-                  Developed scheduling algorithm (C++)
-                </h6>
-                <p class="py-3 px-4 card-text">
-                  Round-robin scheduling is an algorithm used in computer operating systems and is used widely in time-sharing multitasking environments. The scheduler allocates CPU time to each process in a cyclic manner, allowing each process to run for its assigned time and then moving on to the next process in the queue. The algorithm ensures that no single process dominates the CPU for an extended period, ensuring reasonable time allocated for all processes. My implementation of this algorithm consists of using a queue and is written in C++.
-                </p>
-                <a
-                href="https://github.com/Ctc8/CSE-030/blob/main/exercise-3/main.cpp"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="projectBtn"
-                class="btn btn-outline-dark"
-                role="button"
-                >
-                <i></i> View
-              </a>
+          <div class="py-5 px-5 col-md">
+            <div class="projectCard card">
+              <h3 id="projectTitle" class="text-center fw-light py-3">
+                Task Manager
+              </h3>
+              <h6 class="projectTools">
+                (HTML, CSS, JavaScript)
+              </h6>
+              <p class="py-3 px-4 card-text">
+                Made a to-do list where users can add, check off, delete, and clear all of the tasks that they have entered. 
+              </p>
+              <img src="videos/todolist.gif" alt="todolist" id="video-gifs">
+              <a
+              href="https://ctc8.github.io/todo-list/"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="projectBtn"
+              class="btn btn-secondary"
+              role="button"
+              >
+              <i></i> View
+            </a>
 
-              </div>
-            </div>
-
-            <div class="py-5 px-5 col-md">
-              <div id="projectCard" class="card">
-                <h3 id="projectTitle" class="text-center fw-light py-3">
-                  To Do List App
-                </h3>
-                <h6 class="card-subtitle py-2 text-muted text-center">
-                (HTML, CSS, Bootstrap, JavaScript)
-                </h6>
-                <p class="py-3 px-4 card-text">
-                  Made a to do list app which allows users to keep track of their tasks. You can create, check off, and delete entered tasks.
-                </p>
-                <a
-                href="https://ctc8.github.io/todo-list/"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="projectBtn"
-                class="btn btn-outline-dark"  
-                role="button"
-                >
-                <i></i> View
-              </a>
-
-              </div>
             </div>
           </div>
 
-            <div id="portfolioBottomPad" class="row">
-
-            <div class="py-5 px-5 col-md">
-              <div id="projectCard" class="card">
-                <h3 id="projectTitle" class="text-center fw-light py-3">
-                  Project #3
-                </h3>
-                <h6 class="card-subtitle py-2 text-muted text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h6>
-                <p class="py-3 px-4 card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                  veniam doloremque modi. Sapiente aut delectus officiis nisi
-                  explicabo fugiat cupiditate, voluptatem ipsam repudiandae
-                  animi dolor et molestiae fugit laboriosam nostrum? Fusce sit
-                  amet risus eget nibh eleifend egestas a at massa. Vivamus
-                  imperdiet consectetur ligula. Mauris elementum mauris dui,
-                  tempor interdum purus mollis eu.
-                </p>
-
-                <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="projectBtn"
-                class="btn btn-outline-dark disabled"
-                role="button"
-                >
-                <i></i> View
-              </a>
-
-              </div>
-            </div>
-
-            <div class="py-5 px-5 col-md">
-              <div id="projectCard" class="card">
-                <h3 id="projectTitle" class="text-center fw-light py-3">
-                  Project #4
-                </h3>
-                <h6 class="card-subtitle py-2 text-muted text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h6>
-                <p class="py-3 px-4 card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                  veniam doloremque modi. Sapiente aut delectus officiis nisi
-                  explicabo fugiat cupiditate, voluptatem ipsam repudiandae
-                  animi dolor et molestiae fugit laboriosam nostrum? Fusce sit
-                  amet risus eget nibh eleifend egestas a at massa. Vivamus
-                  imperdiet consectetur ligula. Mauris elementum mauris dui,
-                  tempor interdum purus mollis eu.
-                </p>
-
-                <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="projectBtn"
-                class="btn btn-outline-dark disabled"
-                role="button"
-                >
-                <i></i> View
-              </a>
-
-              </div>
-            </div>
+          <div class="py-5 px-5 col-md">
+            <div class="projectCard card">
+              <h3 id="projectTitle" class="text-center fw-light py-3">
+                Website
+              </h3>
+              <h6 class="projectTools">
+                (React.js, TailwindCSS)
+              </h6>
+              <p class="py-3 px-4 card-text">
+                ...
+              </p>
+              <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="projectBtn"
+              class="btn btn-outline-secondary disabled"
+              role="button"
+              >
+              <i></i> View
+            </a>
 
             </div>
-
           </div>
-        </div>
-      </div>
-
-    <div id="closingContainer" class="container">
-      <div class="row justify-content-between">
-        <div class="col-4">
-          <h6 class="py-5">Made by Collin Chuang © 2023</h6>
-        </div>
-        <div class="col-4">
-          <!-- Column -->
         </div>
       </div>
     </div>
 
-    <script src=
+    <div id="closingContainer" class="container">
+      <div class="row justify-content-between">
+        <h6 class="py-5 text-center">
+          © 2023 Collin Chuang. All Rights Reserved.
+        </h6>
+      </div>
+    </div>
+
+    <!-- <script src=
         "/node_modules/particles.js/particles.js">
     </script>
     <script src=
         "/node_modules/particles.js/demo/js/app.js">
-    </script>
+    </script> -->
 
     <script src="main.js"></script>
-
   </body>
 </html>
-
